@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Float 2</title>
+
+    <style>
+        body{
+            font-size: 20px
+        }
+        h1{
+            margin: 0;
+        }
+        article{
+            background-color: paleturquoise;
+        }
+        .caixa1, .caixa2{
+            background-color:chartreuse ;
+            width: 40%;
+        }
+        .caixa1{
+            float: left;
+        }
+        .caixa2{
+            float: right;
+        }
+        footer{
+            background-color: khaki;
+        }
+        /* div agregar configurações a ela */
+         /* peso deum id é maior que o peso de uma class  */
+        div{
+            clear: both;
+        }
+        article> p::first-letter{
+            font-size: 40px;
+        }
+        article::after{
+            content: "";
+            display: block;
+            /* clear: limpa o efeito do float */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- article,div e spam são configuraveis -->
+    <article>
+        <h1>Lorem</h1>
+        <p class="caixa1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, iusto quam? 
+        Rem,ipsum minus,eligendi voluptates sapiente dolorem cum atque asperiores ratione
+        delectus,perferendis illum voluptate voluptatibus sed. Tempore, dignissimos.</p>
+        <p class="caixa2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, iusto quam? Rem, 
+        ipsum minus,eligendi voluptates sapiente dolorem cum atque asperiores ratione
+        delectus,perferendis illum voluptate voluptatibus sed. Tempore, dignissimos.</p>
+    </article>
+    <!-- <div> -->
+        <footer>Este é o rodapé</footer>
+    <!-- </div> -->
+    
+</body>
+</html>
